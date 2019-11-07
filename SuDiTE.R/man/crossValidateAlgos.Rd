@@ -4,8 +4,17 @@
 \alias{crossValidateAlgos}
 \title{Evaluates the quality of different algos by cross-validation of their predictions}
 \usage{
-crossValidateAlgos(models, subgroupQualityFuncs, quantile.probs, dbY, dbTrt,
-  dbX, numTrials, splitFunc, splitOpts)
+crossValidateAlgos(
+  models,
+  subgroupQualityFuncs,
+  quantile.probs,
+  dbY,
+  dbTrt,
+  dbX,
+  numTrials,
+  splitFunc,
+  splitOpts
+)
 }
 \arguments{
 \item{models}{is a vector of model descriptios that contains Train function, Train options, Predict function and the name of the model.
