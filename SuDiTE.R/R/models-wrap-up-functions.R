@@ -127,3 +127,15 @@ predictByModelModLM=function(m, X) {
   X=toNumericTable(X)
   return(predict(m,X))
 }
+#'
+#' Outcome transformation as defined by Weisberg & Pontes, 2015
+#'
+#' @param Y is the binary response varibale
+#' @param Trt is the binary treatment variable
+#'
+#' @return the modified outcome matrix
+#' @export
+#'
+modifyDataByWeisberg=function(Trt,Y) {
+  return(Trt*Y+(1-Trt)*(1-Y))
+}
