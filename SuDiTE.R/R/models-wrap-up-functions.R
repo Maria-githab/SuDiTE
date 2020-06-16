@@ -53,7 +53,6 @@ predictByModelRandomForest=function(m, X) {
 #' @param X is the covariate matrix
 #'
 #' @return returns a numeric-only covariate matrix
-#' @export
 #'
 toNumericTable=function(X) {
   require(data.table)
