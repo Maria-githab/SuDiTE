@@ -4,9 +4,10 @@
 #'
 #' @return returns a numeric-only covariate matrix
 #' @export
-#'
+#' @examples
 #' toNumericTable()
 #'
+
 toNumericTable=function(X) {
   require(data.table)
   d=data.table(X)

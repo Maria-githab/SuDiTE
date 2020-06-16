@@ -21,3 +21,7 @@ Transformations of factors to logical variables
 
 Transformations of factors to logical variables
 }
+\examples{
+toNumericTable()
+
+}
